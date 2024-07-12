@@ -5,10 +5,14 @@
 @section('content')
 <form method="POST" action="/user/register/store">
     @csrf
-    <h1 class="h3 mb-3 fw-normal">Register</h1>
+    <h1 class="h3 mb-3 fw-normal">Daftar Peserta</h1>
     <div class="form-floating">
       <input type="text" class="form-control mb-3" name="name" placeholder="Masukkan Nama">
       <label for="floatingInput">Nama</label>
+    </div>
+    <div class="form-floating">
+      <input type="no_tlp" class="form-control mb-3" name="no_tlp" placeholder="Masukkan no_tlp">
+      <label for="floatingInput">No. Telpon</label>
     </div>
     <div class="form-floating">
       <input type="email" class="form-control mb-3" name="email" placeholder="Masukkan Email">
@@ -18,7 +22,8 @@
       <input type="password" class="form-control mb-3" name="password" placeholder="Masukkan Password">
       <label for="floatingPassword">Password</label>
     </div>
-
-    <button class="btn btn-primary w-100 py-2" type="submit">Register</button>
+    
+    <button class="btn btn-primary w-100 py-2 mb-3" type="submit">Register</button>
+    <a class="mb-3" href="/user/login">Login</a>
   </form>
 @endsection

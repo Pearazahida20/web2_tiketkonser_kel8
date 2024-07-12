@@ -19,7 +19,7 @@
       <input type="password" class="form-control mb-3" name="password" placeholder="Masukkan Password">
       <label for="floatingPassword">Password</label>
     </div>
-
-    <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
+    <button class="btn btn-primary w-100 py-2 mb-3" type="submit">Login</button>
+    <a href="/user/register">Register</a>
   </form>
 @endsection
